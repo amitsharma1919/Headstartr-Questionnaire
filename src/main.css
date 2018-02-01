@@ -1,15 +1,21 @@
 html,body{
   margin: 0px;
   height: 100%;
-  background-color: #EAEAE8;
+  background: url("/images/pattern (3).png");
 }
 .wrapper{
   height: 100%;
   display: grid;
   grid-template-columns: 200px auto;
-  grid-template-rows: 60px auto auto;
+  grid-template-rows: 70px auto auto;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
+li{
+  list-style:none;
+}
 /* HEADER */
 .header{
   display: flex;
@@ -22,7 +28,11 @@ html,body{
   margin: auto 2%;
 }
 .logo{
-  margin: 1% 2%;
+  height: 100px;
+  width: 120px;
+  margin-left: 2%;
+  margin-top: -0.7%;
+  border-radius: 50%;
 }
 .textBox{
   width: 40%;
@@ -36,16 +46,41 @@ html,body{
   padding: 2px;
   -webkit-appearance: none;
 }
+.icons{
+  max-height: 30px;
+  margin: 20px;
+  border-radius:0px;
+}
+.profileImg{
+  width: 50px;
+  height: 50px;
+  border-radius:100%;
+  margin: 10px;
+}
+.icons:hover{
+  cursor: pointer;
+}
+.dropdown-content{
+  display: block;
+  position: absolute;
+  background-color: #EAEAE8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 2;
+}
+.profile{
+  display:flex;
+}
 .dropdownbtn{
   width: 30px;
   height: 30px;
-  padding-bottom: 15px;
+  margin-top: 50%;
+  cursor: pointer;
 }
-.icons{
-  max-height: 50px;
-  margin: 5px 15px;
+.dropdown-content li{
+  padding: 10px;
 }
-
 /* HEADER ENDS */
 
 /* SIDEBAR STARTS */
@@ -125,6 +160,8 @@ html,body{
   background-color: #fff;
   padding: 30px;
   margin: 30px;
+  border: 1px solid  #EAEAE8;
+  box-shadow: 5px 8px #EAEAE8;
 }
 .item2{
   grid-column: 2/ span 1;
@@ -134,6 +171,8 @@ html,body{
   margin: 30px;
   font-size: 25px;
   justify-self: center;
+  border: 1px solid  #EAEAE8;
+  box-shadow: 5px 8px #EAEAE8;
 }
 .grid-container{
   display: grid;
@@ -143,7 +182,7 @@ html,body{
 .image{
   grid-column: 1 / span 1
 }
-img{
+.item1 img{
   height: 240px;
   border-radius: 100%;
 }
